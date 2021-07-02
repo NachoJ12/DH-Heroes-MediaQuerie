@@ -178,3 +178,17 @@ footer img {
     }
     
 }
+
+@media (max-width: 406px) {
+    /* Celulares */
+    section.cajaMadre div.boton {
+        top: 311vh;
+    }
+    footer {
+        justify-content: center;
+    }
+    footer p {
+      text-align: center;
+    }
+    
+}
