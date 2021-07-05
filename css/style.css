@@ -99,7 +99,28 @@ section.cajaMadre article.caja div.texto a {
     border-radius: 7%;    
 }
 
-section.cajaMadre div.boton {
+section.cajaMadre div.button1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 3vw;
+    top: 64vh;
+}
+
+
+section.cajaMadre button {
+    background-color: #00669F;
+    color: #FFFFFF;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    font-size: 35px;
+}
+
+
+/* section.cajaMadre div.boton {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -117,7 +138,7 @@ section.cajaMadre div.boton a {
     text-decoration: none;
     color: white;
     font-size: 35px;
-}
+} */
 
 footer {
     background-color: #00669F;
@@ -141,34 +162,68 @@ footer img {
 }
 
 
+@media (max-width: 1520px) {
+    /* Tablets grandes/laptop */
+    main {
+        padding: 90px 10px;
+    }
+    section.cajaMadre div.button1 {
+        top: 90vh;
+        position: static;
+    }
+}
+
+/* @media (max-width: 1300x) {
+
+} */
+
 
 @media (max-width: 1216px) {
     /* Tablets grandes/laptop */
-    section.cajaMadre div.boton {
+    section.cajaMadre div.button1 {
         top: 90vh;
     }
 }
 
 
-@media (max-width: 896px) {
+@media (max-width: 979px) {
     /* Tablets */
-    section.cajaMadre div.boton {
-        top: 160vh;
+    section.cajaMadre {
+        justify-content: space-evenly;
+    }
+
+    section.cajaMadre div.button1 {
+        top: 100vh;
+        right: 3vw;
+        position: absolute;
     }
 }
 
-/* @media (max-width: 768px) {
-    /* Tablets 
-    section.cajaMadre div.boton {
-        top: 160vh;
+@media (max-width: 845px) {
+    section.cajaMadre div.button1 {
+        top: 100vh;
+        right: 3vw;
+        position: sticky;
+        width: 50vw;
     }
-} */
+}
+
+
+
+@media (max-width: 668px) {
+    /* Tablets */
+    section.cajaMadre div.button1 {
+        top: 177vh;
+        right: 9vw;
+    }
+}
 
 
 @media (max-width: 480px) {
     /* Celulares */
-    section.cajaMadre div.boton {
-        top: 160vh;
+    section.cajaMadre div.button1 {
+        position: static;
+        top: 177vh;   
     }
     footer {
         justify-content: center;
@@ -181,8 +236,8 @@ footer img {
 
 @media (max-width: 406px) {
     /* Celulares */
-    section.cajaMadre div.boton {
-        top: 311vh;
+    section.cajaMadre div.button1 {
+        top: 337vh;
     }
     footer {
         justify-content: center;
@@ -190,5 +245,4 @@ footer img {
     footer p {
       text-align: center;
     }
-    
 }
